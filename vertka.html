@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивный сайт</title>
+    <style>
+        /* Базовые стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 0 15px;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 15px;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Контент */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .col {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Адаптивность */
+        .col {
+            flex: 1 1 calc(100% - 40px); /* Ширина 100% - отступы */
+        }
+
+        @media (min-width: 768px) {
+            .col {
+                flex: 1 1 calc(50% - 40px); /* 50% ширины */
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .col {
+                flex: 1 1 calc(25% - 40px); /* 25% ширины */
+            }
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>POCESS</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col"><big><b>Проблема</b></big> <br> <small>Проблема которую мы поставили перед собой, это отсутствие физического доступа клиента к своему техническому устройству</small></div>
+        <div class="col"><big><b>Метод работы</b></big> <br> <small>Заходим в приложение телеграмм и выбираем чат-бот "Pocess". Запрашиваем список файлов, которые находятся на компьютере, затем выбраем из них нуженый нам, либо сразу пишем название нужного нам файла, чат-бот его ищет и соответственно предоставляет его пользователю</small></div>
+        <div class="col"><big><b>Доп. функции</b></big> <br> <small>Определение ip-адреса,показывает комплектующие устройства делает скриншот экрана,делает снимок с камера,показывает активные процессы устройства</small></div>
+        <div class="col"><big><b>Целевая аудитория</b></big> <br> <small>Нашими потенциальными потребителями являются студенты и преподаватели, которые не имеют ноутбуков или возможности их брать, и поэтому используют флэшки для переноса файлов, что не очень удобно, т.к их легко забыть и количество памяти сильно ограничено</small></div>
+    </div>
+</div>
+<div class="col">
+    <img src="img/1.png" alt="Описание" style="width: 10%; border-radius: 10px;">
+    <h3>POCKET ACCESS</h3>
+    <p>Это проект выполненный в формате телеграмм бота, который позволяет пользователю, удалённо обратиться к файлам на другом своём техническом устройстве, к которому он не имеет физического доступа.</p>
+</div>
+
+<footer>
+    <p>© 2024 Мой проект. Все права защищены.</p>
+</footer>
+</body>
+</html>
