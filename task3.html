@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div p {
+            color: #4CAF50;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        div h2 {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            font-size: 22px;
+            color: #333333;
+            margin: 20px 0;
+        }
+
+        #test p {
+            text-decoration: underline;
+            font-style: italic;
+            padding: 5px;
+            background-color: #F0F8FF;
+        }
+
+        #test h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #FFA500;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .bbb {
+            font-size: 70px;
+        }
+
+        #test .bbb {
+            color: #f31d1d;
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 10px;
+            border: 1px solid #213123;
+        }
+
+        p.bbb {
+            color: #44d747;
+        }
+
+        h2.bbb {
+            font-family: "Arial", sans-serif;
+            font-weight: bold;
+            color: #FF6347;
+            padding: 5px;
+        }
+
+        #test p.bbb {
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        div h2,
+        div p {
+            transform: rotate(-2deg);
+        }
+
+        .bbb,
+        .xxx {
+            background-color: slateblue;
+        }
+
+        p.bbb,
+        h2.xxx {
+            margin-right: 20px;
+        }
+
+        #test p.bbb,
+        #test p.xxx {
+            opacity: 0.2;
+        }
+
+        .fff {
+            background-color: palegoldenrod;
+        }
+
+        .fff p {
+            text-shadow: 2px 2px #2abb12;
+        }
+
+        p.fff {
+            text-decoration: underline;
+        }
+
+        .fff .bbb {
+            opacity: 0.3;
+        }
+
+        .fff h2.bbb {
+            max-width: 100px;
+        }
+
+        #test a:link,
+        #test a:visited {
+            text-decoration: none;
+            color: red;
+        }
+
+        #test a:hover {
+            text-decoration: underline;
+            color: lightskyblue;
+        }
+
+        a.www:link,
+        a.www:visited {
+            text-decoration: underline;
+            color: lightskyblue;
+        }
+
+        a.www:hover {
+            text-decoration: none;
+        }
+
+        #test a.www:link,
+        #test a.www:visited {
+            text-decoration: none;
+            color: #87e1ab;
+        }
+
+        #test a.www:hover {
+            text-decoration: underline;
+            color: #28140d;
+        }
+
+        .eee a.www:link,
+        .eee a.www:visited {
+            text-decoration: none;
+            color: #d730a1;
+        }
+
+        .eee a.www:hover {
+            text-decoration: underline;
+            color: #427a45;
+        }
+
+        p > i {
+            text-size: 130px;
+            color: #ff0000;
+            background-color: #30587a;
+        }
+
+        ul > li {
+            background-color: #ffde00;
+            list-style: none;
+        }
+
+        p > a,
+        a.test {
+            background-color: #78dc51;
+        }
+
+        b + i {
+            background-color: #acbda2;
+        }
+
+        #test b + i {
+            background-color: #00ffe0;
+        }
+
+        ul + p {
+            background-color: rgba(3, 42, 241, 0.78);
+        }
+
+        h1 ~ p {
+            background-color: rgba(241, 3, 185, 0.78);
+            text-transform: uppercase;
+        }
+
+        #test h2 ~ p {
+            background-color: rgba(171, 100, 154, 0.78);
+            text-transform: uppercase;
+        }
+
+        p > * > i {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <p>Задание 1</p>
+    <h2>Задание 2</h2>
+</div>
+
+<section id="test">
+    <p>Задание 3</p>
+    <h2>Задание 4</h2>
+    <h3 class="bbb">Задание 6</h3>
+    <p class="bbb">Задание 9</p>
+</section>
+
+<h3 class="bbb">Задание 5</h3>
+<p class="bbb">Задание 7</p>
+<h2 class="bbb">Задание 8</h2>
+
+<div>
+    <p>Задание 10(p)</p>
+    <h2>Задание 10(h2)</h2>
+</div>
+
+<h5 class="bbb xxx">Задание 11</h5>
+
+<p class="bbb">Задание 12(p)</p>
+<h2 class="xxx">Задание 12(h2)</h2>
+
+<section id="test">
+    <p class="bbb">Задание 13(bbb)</p>
+    <p class="xxx">Задание 13(xxx)</p>
+</section>
+
+<section class="fff">
+    <h4>Задание 14</h4>
+    <p>Задание 15</p>
+</section>
+
+<p class="fff">Задание 16</p>
+
+<section class="fff">
+    <h6 class="bbb">Задание 17</h6>
+    <h2 class="bbb">Задание 18</h2>
+</section>
+
+<section id="test">
+    <a href="#">Задание 19</a>
+</section>
+
+<a href="#" class="www">Задание 20</a>
+
+<section id="test">
+    <a href="#" class="www">Задание 21</a>
+</section>
+
+<section class="eee">
+    <a href="#" class="www">Задание 22</a>
+</section>
+
+<p>Задание <i>23</i></p>
+
+<ul>
+    <li>Задание 24</li>
+</ul>
+
+<p><a href="#">Задание</a> 25(p)</p>
+<a href="#" class="test">Задание 25(test)</a>
+<br>
+<b>Задание</b><i> 26</i>
+
+<section id="test">
+    <b>Задание</b><i> 27</i>
+</section>
+
+<ul><li>Задание 28(ul;li)</li></ul><p>Задание 28(p)</p>
+
+<h1>Задание 29(h1)</h1>
+<p>Задание 29(p)</p>
+
+<section id="test">
+    <h2>Задание 30(h2)</h2>
+    <p>Задание 30(p)</p>
+</section>
+
+<p><s><i>Задание 31</i></s></p>
+</body>
+</html>
